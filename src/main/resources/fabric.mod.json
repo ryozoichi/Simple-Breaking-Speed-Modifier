@@ -3,13 +3,13 @@
 	"id": "simple_breaking_speed_modifier",
 	"version": "${version}",
 	"name": "Simple Breaking Speed Modifier",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Set base breaking speed for all players via simple config.",
 	"authors": [
 		"Me!"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/Dr-Sievert/Simple-Breaking-Speed-Modifier"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/simple_breaking_speed_modifier/icon.png",
