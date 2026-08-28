@@ -1,18 +1,13 @@
 ```
-# Dependencies
-libs/
-lib/
-
-# Build artifacts
+# Gradle
+.gradle/
 build/
 dist/
-target/
+!gradle/wrapper/gradle-wrapper.jar
 
-# IDE files
+# IDE
 .vscode/
 .idea/
-*.swp
-*.swo
 
 # Logs
 *.log
@@ -22,18 +17,46 @@ target/
 .env.local
 *.env.*
 
-# OS files
+# Dependencies
+node_modules/
+lib/
+
+# OS
 .DS_Store
 Thumbs.db
 
-# Gradle
-.gradle/
-!gradle.properties
-!gradlew
-
-# Compiled Java
+# Compiled files
 *.class
 *.jar
+*.war
+*.ear
+*.so
+*.dll
+*.dylib
+
+# Python (if any Python files exist in project)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# Archives
+*.zip
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.7z
+*.rar
+*.gz
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
 
 # Temporary files
 *.tmp
