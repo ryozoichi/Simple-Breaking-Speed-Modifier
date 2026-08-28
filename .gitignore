@@ -6,7 +6,7 @@
 # Build results
 build/
 dist/
-target/
+!gradle/wrapper/gradle-wrapper.jar
 
 # Dependencies
 .libs/
