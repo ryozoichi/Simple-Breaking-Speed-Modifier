@@ -1,40 +1,41 @@
-# gradle
+```
+# Dependencies
+libs/
+lib/
 
-.gradle/
+# Build artifacts
 build/
-out/
-classes/
+dist/
+target/
 
-# eclipse
-
-*.launch
-
-# idea
-
-.idea/
-*.iml
-*.ipr
-*.iws
-
-# vscode
-
-.settings/
+# IDE files
 .vscode/
-bin/
-.classpath
-.project
+.idea/
+*.swp
+*.swo
 
-# macos
+# Logs
+*.log
 
-*.DS_Store
+# Environment
+.env
+.env.local
+*.env.*
 
-# fabric
+# OS files
+.DS_Store
+Thumbs.db
 
-run/
+# Gradle
+.gradle/
+!gradle.properties
+!gradlew
 
-# java
+# Compiled Java
+*.class
+*.jar
 
-hs_err_*.log
-replay_*.log
-*.hprof
-*.jfr
+# Temporary files
+*.tmp
+*.temp
+```
