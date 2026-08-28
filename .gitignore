@@ -1,41 +1,59 @@
 ```
-# Dependencies
-libs/
-lib/
+# Gradle
+.gradle/
+!gradle/wrapper/
 
-# Build artifacts
+# Build results
 build/
 dist/
 target/
 
-# IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
+# Dependencies
+.libs/
+lib/
+dependency-reduced-pom.xml
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.hprof
+*.dump
+*.idx
+*.data
+*.bin
+
+# Minecraft/Fabric specific
+.run/
+*.lck
+
+# Loom
+loom-cache/
+
+# Temporary files
+*.tmp
+*.temp
+*~
+.DS_Store
+Thumbs.db
 
 # Logs
 *.log
+
+# IDE
+.idea/
+*.swp
+*.swo
 
 # Environment
 .env
 .env.local
 *.env.*
 
-# OS files
-.DS_Store
-Thumbs.db
-
-# Gradle
-.gradle/
-!gradle.properties
-!gradlew
-
-# Compiled Java
-*.class
-*.jar
-
-# Temporary files
-*.tmp
-*.temp
+# Coverage
+coverage/
+htmlcov/
+.coverage
 ```
