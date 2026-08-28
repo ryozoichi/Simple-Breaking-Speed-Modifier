@@ -1,34 +1,68 @@
+--- src/main/resources/fabric.mod.json (原始)
 {
-	"schemaVersion": 1,
-	"id": "simple_breaking_speed_modifier",
-	"version": "${version}",
-	"name": "Simple Breaking Speed Modifier",
-	"description": "Set base breaking speed for all players via simple config.",
-	"authors": [
-		"Me!"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/Dr-Sievert/Simple-Breaking-Speed-Modifier"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/simple_breaking_speed_modifier/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"net.sievert.SimpleBreakingSpeedModifier"
-		],
-		"modmenu": [
-			"net.sievert.screen.ModMenuIntegration"
-		]
-	},
-	"depends": {
-		"fabricloader": ">=0.17.2",
-		"minecraft": ">=1.21.2 <=1.21.10",
-		"java": ">=21",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"modmenu": "*"
-	}
+        "schemaVersion": 1,
+        "id": "simple_breaking_speed_modifier",
+        "version": "${version}",
+        "name": "Simple Breaking Speed Modifier",
+        "description": "Set base breaking speed for all players via simple config.",
+        "authors": [
+                "Me!"
+        ],
+        "contact": {
+                "homepage": "https://fabricmc.net/",
+                "sources": "https://github.com/Dr-Sievert/Simple-Breaking-Speed-Modifier"
+        },
+        "license": "CC0-1.0",
+        "icon": "assets/simple_breaking_speed_modifier/icon.png",
+        "environment": "*",
+        "entrypoints": {
+                "main": [
+                        "net.sievert.SimpleBreakingSpeedModifier"
+                ]
+        },
+        "depends": {
+                "fabricloader": ">=0.17.2",
+                "minecraft": "~1.21.1",
+                "java": ">=21",
+                "fabric-api": "*"
+        },
+        "suggests": {
+                "another-mod": "*"
+        }
+}
+
++++ src/main/resources/fabric.mod.json (修改后)
+{
+        "schemaVersion": 1,
+        "id": "simple_breaking_speed_modifier",
+        "version": "${version}",
+        "name": "Simple Breaking Speed Modifier",
+        "description": "Set base breaking speed for all players via simple config.",
+        "authors": [
+                "Me!"
+        ],
+        "contact": {
+                "homepage": "https://fabricmc.net/",
+                "sources": "https://github.com/Dr-Sievert/Simple-Breaking-Speed-Modifier"
+        },
+        "license": "CC0-1.0",
+        "icon": "assets/simple_breaking_speed_modifier/icon.png",
+        "environment": "*",
+        "entrypoints": {
+                "main": [
+                        "net.sievert.SimpleBreakingSpeedModifier"
+                ],
+                "modmenu": [
+                        "net.sievert.screen.ModMenuIntegration"
+                ]
+        },
+        "depends": {
+                "fabricloader": ">=0.17.2",
+                "minecraft": ">=1.21.2 <=1.21.10",
+                "java": ">=21",
+                "fabric-api": "*"
+        },
+        "suggests": {
+                "modmenu": "*"
+        }
 }
