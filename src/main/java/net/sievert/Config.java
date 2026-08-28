@@ -20,10 +20,10 @@ import java.util.List;
 public class Config {
 
     /** Path to the JSON config file on disk. */
-    private static final Path CONFIG_PATH = Path.of("config/simple_breaking_speed_modifier.json");
+    public static final Path CONFIG_PATH = Path.of("config/simple_breaking_speed_modifier.json");
 
     /** Gson instance with pretty-printing for JSON (de)serialization. */
-    private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
+    public static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
 
     /** Logger for config-related messages. */
     private static final Logger LOGGER = LoggerFactory.getLogger(SimpleBreakingSpeedModifier.MOD_ID);
