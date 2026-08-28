@@ -1,53 +1,35 @@
-```
-# Gradle
-.gradle/
-!gradle/wrapper/
-
-# Build results
+# Compiled and build artifacts
+*.class
+*.o
+*.obj
+*.out
 build/
-dist/
-!gradle/wrapper/gradle-wrapper.jar
+target/
 
 # Dependencies
-.libs/
-lib/
-dependency-reduced-pom.xml
+.gradle/
+.mypy_cache/
+.pytest_cache/
+__pycache__/
+node_modules/
+venv/
+.venv/
+dist/
 
-# Java
-*.class
-*.jar
-*.war
-*.ear
-*.nar
-*.hprof
-*.dump
-*.idx
-*.data
-*.bin
-
-# Minecraft/Fabric specific
-.run/
-*.lck
-
-# Loom
-loom-cache/
-
-# Temporary files
-*.tmp
-*.temp
-*~
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-
-# IDE
+# Editors
+.vscode/
 .idea/
 *.swp
 *.swo
 
-# Environment
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+
+# System files
+.DS_Store
+Thumbs.db
 .env
 .env.local
 *.env.*
@@ -56,4 +38,27 @@ Thumbs.db
 coverage/
 htmlcov/
 .coverage
-```
+
+# Archives
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst

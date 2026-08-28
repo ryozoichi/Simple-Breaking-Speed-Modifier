@@ -123,6 +123,18 @@ public class ModConfigScreen extends Screen {
         try {
             java.nio.file.Files.createDirectories(Config.CONFIG_PATH.getParent());
             java.nio.file.Files.writeString(Config.CONFIG_PATH, Config.GSON.toJson(config));
+            
+            // Reload config and apply to current player if in singleplayer
+            Config.load();
+            if (client != null && client.player != null) {
+                var attr = client.player.getAttributeInstance(net.minecraft.entity.attribute.EntityAttributes.PLAYER_BLOCK_BREAK_SPEED);
+                if (attr != null) {
+                    attr.setBaseValue(Config.INSTANCE.playerBlockBreakSpeedBase);
+                    if (Config.INSTANCE.enableDebugLogging) {
+                        net.sievert.SimpleBreakingSpeedModifier.LOGGER.info("Applied new block break speed: {}", Config.INSTANCE.playerBlockBreakSpeedBase);
+                    }
+                }
+            }
         } catch (Exception e) {
             // Silently fail on save error
         }
